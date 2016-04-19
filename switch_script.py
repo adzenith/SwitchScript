@@ -24,7 +24,7 @@ def log(msg):
     return
 
   global version
-  print "SwitchScript %s: %s" % (version, msg)
+  print ("SwitchScript %s: %s" % (version, msg))
 
 def assign_options(args):
   global options
@@ -39,7 +39,7 @@ def portable_split(path, debug=False):
     parts = []
     while True:
         newpath, tail = os.path.split(path)
-        if debug: print repr(path), (newpath, tail)
+        if debug: print (repr(path), (newpath, tail))
         if newpath == path:
             assert not tail
             if path: parts.append(path)
@@ -120,7 +120,7 @@ def strip_common_ancestors(in_path):
     if path not in in_path:
       continue
 
-    in_path = filter(lambda a: a != path, in_path)
+    in_path = list(filter(lambda a: a != path, in_path))
 
   return in_path
 

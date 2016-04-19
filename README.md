@@ -1,4 +1,4 @@
-SwitchScript is a plugin for the Sublime Text 2 editor that adds support for switching between header and source files according to specified extensions within the current active directory tree. This editor ability is very helpful for working with projects that contain a large number of files (eg. C++ projects with .cpp and .hpp and files).
+SwitchScript is a plugin for the Sublime Text 2/3 editor that adds support for switching between header and source files according to specified extensions within the current active directory tree. This editor ability is very helpful for working with projects that contain a large number of files (eg. C++ projects with .cpp and .hpp and files).
 
 The plugin is flexible to support different project structures, and it makes no assumptions about where your files are stored so long as they're all under one root; the active folder you've opened in the editor.
 
